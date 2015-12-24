@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="project_picker_item_overlay_vertical_inset">20dip</dimen>
+    <dimen name="project_picker_item_overlay_horizontal_inset">20dip</dimen>
+    <dimen name="project_picker_item_overlay_height">28dip</dimen>
+    <dimen name="project_picker_item_font_size">14sp</dimen>
+    <dimen name="project_picker_column_width">320dip</dimen>
+    <dimen name="project_picker_item_container_width">290dip</dimen>
+    <dimen name="project_picker_item_width">270dip</dimen>
+    <dimen name="project_picker_item_height">135dip</dimen>
+    <dimen name="media_layout_height">115dip</dimen>
+    <dimen name="timeline_add_media_button_height">60dip</dimen>
+    <dimen name="timeline_add_media_button_top_padding">20dip</dimen>
+    <dimen name="overlay_layout_height">65dip</dimen>
+    <dimen name="audio_layout_height">50dip</dimen>
+    <dimen name="playhead_layout_height">20dip</dimen>
+    <dimen name="playhead_layout_text_size">12sp</dimen>
+    <dimen name="media_layout_padding">2dip</dimen>
+    <dimen name="add_audio_track_button_width">56dip</dimen>
+    <dimen name="handle_width">36dip</dimen>
+    <dimen name="timeline_separator_height">2dip</dimen>
+    <dimen name="playhead_margin_top">0dip</dimen>
+    <dimen name="playhead_margin_top_ok">19dip</dimen>
+    <dimen name="playhead_margin_top_not_ok">14dip</dimen>
+    <dimen name="playhead_margin_bottom">20dip</dimen>
+    <dimen name="playhead_tick_height">3dip</dimen>
+    <dimen name="timelime_item_vertical_padding">3dip</dimen>
+    <dimen name="timelime_item_horizontal_padding">3dip</dimen>
+    <dimen name="timelime_transition_vertical_inset">12dip</dimen>
+
+    <!-- KNOW MY STORY DIMENSIONS -->
+    <!-- Testing in New Samsung Note 3 -->
+    <dimen name="tell_your_story_title_page_font">26sp</dimen>
+    <dimen name="tell_your_story_region_page_font">22sp</dimen>
+    <dimen name="tell_your_story_description_page_font">22sp</dimen>
+    <dimen name="storyname_font">17sp</dimen>
+    <dimen name="description_hint_font">14sp</dimen>
+    <dimen name="topics_font">17sp</dimen>
+    <dimen name="story_tag_font">15dip</dimen>
+    <dimen name="story_desc_font">13dip</dimen>
+    <dimen name="button_rerecord_height">35dip</dimen>
+    <dimen name="button_trim_height">35dip</dimen>
+    <dimen name="button_trim_rerecord_margin_left">10dip</dimen>
+    <dimen name="button_trim_rerecord_margin_right">10dip</dimen>
+    <dimen name="button_trim_rerecord_margin_bottom">10dip</dimen>
+    <dimen name="tab_icon_text_size">15dip</dimen>
+    <dimen name="tab_label_text_size">20dip</dimen>
+    <dimen name="trim_duration_textsize">15dip</dimen>
+
+    <!-- Text size -->
+    <dimen name="trim_btn_trim">15sp</dimen>
+    <dimen name="trim_btn_cancel">15sp</dimen>
+    <dimen name="sign_in_textsize">25sp</dimen>
+    <dimen name="terms_cond_textsize">15sp</dimen>
+    <dimen name="menu_textsize">38sp</dimen>
+    <dimen name="menu_subtext_textsize">15sp</dimen>
+    <!-- Horizontal loader -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Slider view (The Word screen) -->
+    <dimen name="verses_header_margin_bottom">10dp</dimen>
+    <dimen name="verses_header_font_size">20sp</dimen>
+    <dimen name="verses_body_font_size">16sp</dimen>
+    <dimen name="verses_header_margin_left">20dp</dimen>
+    <dimen name="verses_body_margin_left">20dp</dimen>
+    <dimen name="verses_body_margin_right">20dp</dimen>
+    <dimen name="verses_header_margin_right">20dp</dimen>
+    <dimen name="verses_chooseagainbutton_font_size">13sp</dimen>
+
+    <!-- Button size -->
+    <dimen name="btn_signin_back_width">20dp</dimen>
+    <dimen name="btn_signin_back_height">20dp</dimen>
+
+    <!-- MARGINS -->
+     <dimen name="menu_text_margin_left">20dp</dimen>
+    <!-- My Profile -->
+      <dimen name="myprofile_textsize">20sp</dimen>
+       <dimen name="myProfile_username_fontsize">16sp</dimen>
+         <dimen name="myProfile_email_fontsize">14sp</dimen>
+          <dimen name="myProfile_address_fontsize">14sp</dimen>
+           <dimen name="myProfile_phone_fontsize">14sp</dimen>
+            <dimen name="edit_profile_btn_fontsize">13sp</dimen>
+               <dimen name="edit_profile_gender_fontsize">10sp</dimen>
+            <dimen name="edit_profile_button_fontsize">12sp</dimen>
+             <dimen name="edit_profile_userdetail_fontsize">14sp</dimen>
+    
+    <!-- Progress loaders -->
+       <dimen name="merging_progress_fontsize">18sp</dimen>
+    
+    
+    
+</resources>

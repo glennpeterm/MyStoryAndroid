@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" xmlns:app="http://schemas.android.com/apk/res/net.onehope.mystory">
+
+    <android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    
+    <com.viewpager.indicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        app:fillColor="@color/orange"
+        app:pageColor="@color/greycolor"
+        app:strokeWidth="0px"
+        app:snap="true"
+        app:radius="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:src="@drawable/gotit"
+        />
+
+</FrameLayout>

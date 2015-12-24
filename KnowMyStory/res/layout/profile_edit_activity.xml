@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvMyProfileHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="7dp"
+            android:text="@string/myprofile_heading"
+            android:textColor="@color/orange"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="wrap_content"
+             android:layout_height="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradient_effect" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/profilepic_border" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0.1dp"
+                        android:background="@color/white" >
+
+                        <ImageView
+                            android:id="@+id/imgvPic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="0dp"
+                            android:background="@color/white"
+                            android:src="@drawable/defauls_profile" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left" >
+
+                    <Button
+                        android:id="@+id/btn_home"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/btn_home" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1.2"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/tvUserNAme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:text="UserName"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvUserNAme"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:text="Mail"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/myProfile_username_fontsize" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMail"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/my_profile_location"
+                        android:drawablePadding="5dp"
+                        android:text="Address"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/myProfile_address_fontsize" />
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvAddress"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/my_profile_mobile"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Phone"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/myProfile_phone_fontsize" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPhone"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="60dp"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_edit_profile"
+                            android:layout_width="145dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/orange"
+                            android:text="@string/myprofile_editprofile"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/edit_profile_btn_fontsize" />
+
+                        <Button
+                            android:id="@+id/btnLogout"
+                            android:layout_width="145dp"
+                            android:layout_height="35dp"
+                            android:background="@color/black"
+                             android:layout_marginRight="15dp"
+                            android:text="@string/settings_logout"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/edit_profile_btn_fontsize"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <!-- </LinearLayout> -->
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".8" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/etxtvFname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="FirstName"
+                        android:minEms="10" />
+
+                    <EditText
+                        android:id="@+id/etxtvLname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="LastName"
+                        android:minEms="10" />
+
+                    <EditText
+                        android:id="@+id/etxtvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="Email ID" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rdbtnMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtnFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Female" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/etxtvDOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:hint="DOB"
+                        android:minEms="10" />
+
+                    <EditText
+                        android:id="@+id/etxtvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/etxtvCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/etxtvState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:inputType="text" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actxtvCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Country"
+                        android:maxLines="1"
+                        android:minEms="15"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/etxtvZipCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="ZipCode"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etxtvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
+                        android:hint="PhoneNumber"
+                        android:inputType="phone" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom" >
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reset" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".2"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgvPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_launcher"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnImagePick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgvPic"
+            android:text="pick image" />
+    </LinearLayout>
+
+</LinearLayout>

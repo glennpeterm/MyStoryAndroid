@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tvFinishHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingLeft="5dp"
+            android:text="@string/finish_heading"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvFinishText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFinishHeading"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="@string/finish_text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFinishText"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="@string/finish_delete"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_finishlater"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="7dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="@string/finish_later"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_finishnow"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:text="@string/finish_now"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="7dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/btn_signin_back" />
+
+            <TextView
+                android:id="@+id/tvVerseIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="7dp"
+                android:text="@string/myprofile_heading"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/myprofile_textsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradient_effect" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/profilepic_border" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0.1dp"
+                            android:background="@color/white" >
+
+                            <ImageView
+                                android:id="@+id/imgvPic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="0dp"
+                                android:src="@drawable/defauls_profile" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnImagePick"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/rl_pic"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/orange"
+                        android:text="@string/myprofile_edit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/edit_profile_button_fontsize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left" >
+
+                    <Button
+                        android:id="@+id/btn_home"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/btn_home" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <EditText
+                                android:id="@+id/etxtvFname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_firstname"
+                                android:inputType="textCapWords"
+                                android:minEms="10"
+                                android:nextFocusDown="@+id/etxtvLname"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvLname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_secondname"
+                                android:inputType="textCapWords"
+                                android:nextFocusDown="@+id/etxtvPhone"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <TextView
+                                android:id="@+id/etxtvEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="email"
+                                android:textColor="@color/light_grey" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal" 
+                                android:background="@color/white">
+
+                                <TextView
+                                    android:id="@+id/tvGender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/myprofile_gender"
+                                    android:textColor="@color/light_grey"
+                                    android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                                <Button
+                                    android:id="@+id/rdbtnMale"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/gender_border"
+                                    android:orientation="horizontal"
+                                    android:text="@string/male"
+                                    android:textColor="@color/orange"
+                                    android:textSize="@dimen/edit_profile_gender_fontsize" />
+
+                                <Button
+                                    android:id="@+id/rdbtnFemale"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="0dp"
+                                    android:background="@drawable/gender_border"
+                                    android:orientation="horizontal"
+                                    android:text="@string/female"
+                                    android:textColor="@color/orange"
+                                    android:textSize="@dimen/edit_profile_gender_fontsize" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/etxtvDOB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:clickable="true"
+                                android:hint="@string/myprofile_dob"
+                                android:minEms="10"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_phone"
+                                android:inputType="phone"
+                                android:nextFocusDown="@+id/etxtvAddress"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_address"
+                                android:inputType="textCapWords"
+                                android:nextFocusDown="@+id/etxtvCity"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_city"
+                                android:inputType="textCapWords"
+                                android:nextFocusDown="@+id/etxtvState"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvState"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_state"
+                                android:inputType="textCapWords"
+                                android:nextFocusDown="@+id/actxtvCountry"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <TextView
+                                android:id="@+id/actxtvCountry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/contry_select"
+                                android:hint="@string/myprofile_country"
+                                android:maxLines="1"
+                                android:minEms="15"
+                                android:padding="5dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <EditText
+                                android:id="@+id/etxtvZipCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/profile_form_bg"
+                                android:hint="@string/myprofile_zip"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textColor="@color/light_grey"
+                                android:textSize="@dimen/edit_profile_userdetail_fontsize" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="15dp"
+                                android:gravity="bottom" >
+
+                                <Button
+                                    android:id="@+id/btnCancel"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/black"
+                                    android:text="@string/myprofile_cancel"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/edit_profile_btn_fontsize" />
+
+                                <Button
+                                    android:id="@+id/btnUpdate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/orange"
+                                    android:text="@string/myprofile_save"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/edit_profile_btn_fontsize" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

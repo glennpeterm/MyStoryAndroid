@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/text_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/online_title"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_heading"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/please_select"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/text"
+        android:background="@color/lightest_grey" />
+
+    <Button
+        android:id="@+id/btn_goto"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="@string/goto_know"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/btn_goto"
+        android:background="@color/lightest_grey" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+</RelativeLayout>

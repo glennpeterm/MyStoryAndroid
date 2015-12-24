@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="short_app_name">My Story</string>
+    <string name="full_app_name">Android Movie Studio</string>
+     <string name="shipped_ffmpeg_version">n2.4.2</string>
+
+    <!-- Displayed in the center of the activity while a project is loading. -->
+    <string name="editor_loading_project">Loading project\u2026</string>
+    <!-- Displayed in the center of the activity if a project could not be loaded. -->
+    <string name="editor_no_project">No project found.</string>
+    <!-- Menu text displayed for adding new media item. -->
+    <string name="editor_add">Add</string>
+    <!-- Menu item used to launch the Gallery video clip picker. -->
+    <string name="editor_import_video">Import video clip</string>
+    <!-- Menu item used to launch the Gallery image picker. -->
+    <string name="editor_import_image">Import image</string>
+    <!-- Menu item used to launch the Music song picker. -->
+    <string name="editor_import_audio">Import music</string>
+    <!-- Menu item used to share the movie (e.g. to YouTube). -->
+    <string name="editor_share_movie">Share movie</string>
+    <!-- Menu item used to export the movie. -->
+    <string name="editor_export_movie">Export movie</string>
+    <!-- Menu item used to play the exported movie. -->
+    <string name="editor_play_exported_movie">Play exported movie</string>
+    <!-- Menu item used to change the aspect ratio of the movie. -->
+    <string name="editor_change_aspect_ratio">Change aspect ratio</string>
+    <!-- Menu item used to change the project name. -->
+    <string name="editor_edit_project_name">Change project name</string>
+    <!-- Menu item used to delete the project. -->
+    <string name="editor_delete_project">Delete project</string>
+    <!-- Menu item for capturing a new video clip. -->
+    <string name="editor_capture_video">Record a video</string>
+    <!-- Menu item for capturing a new image. -->
+    <string name="editor_capture_image">Take a photo</string>
+    <!-- Text displayed in the delete project confirmation dialog. -->
+    <string name="editor_delete_project_question">Do you want to delete this project?</string>
+    <!-- Text displayed in the playback widget to indicate the current playhead time position [CHAR_LIMIT=11] -->
+    <string name="editor_zero_time_stamp">00:00:00.0</string>
+    <!-- Text displayed in the remove audio track confirmation dialog. -->
+    <string name="editor_remove_audio_track_question">Do you want to remove this audio track?</string>
+    <!-- Menu header of title overlay menu. -->
+    <string name="editor_title_menu_header">Title</string>
+    <!-- Menu item used to add a new title (overlay title). -->
+    <string name="editor_add_overlay">Add title</string>
+    <!-- Menu item used to change the overlay title. -->
+    <string name="editor_edit_overlay">Edit title</string>
+    <!-- Menu item used to remove a title (overlay title). -->
+    <string name="editor_remove_overlay">Remove title</string>
+    <!-- Text displayed in the remove overlay confirmation dialog. -->
+    <string name="editor_remove_overlay_question">Do you want to remove this overlay?</string>
+    <!-- Menu item used to change the rendering mode. Launches a single choice dialog. -->
+    <string name="editor_change_rendering_mode">Change rendering mode</string>
+    <!-- Text displayed in the remove transition confirmation dialog. -->
+    <string name="editor_remove_transition_question">Do you want to remove this transition?</string>
+    <!-- Text displayed in the remove effect confirmation dialog. -->
+    <string name="editor_remove_effect_question">Do you want to remove this effect?</string>
+    <!-- Text displayed in the remove video clip confirmation dialog. -->
+    <string name="editor_remove_video_question">Do you want to remove this video clip?</string>
+    <!-- Text displayed in the remove image confirmation dialog. -->
+    <string name="editor_remove_image_question">Do you want to remove this image?</string>
+    <!-- Text displayed as the header of effect menu. -->
+    <string name="editor_effect_menu_header">Effect</string>
+    <!-- Menu item used to add an effect. -->
+    <string name="editor_add_effect">Add effect</string>
+    <!-- Menu item used to change an effect type and/or duration. -->
+    <string name="editor_change_effect">Change effect</string>
+    <!-- Menu item used to remove an effect. -->
+    <string name="editor_remove_effect">Remove effect</string>
+    <!-- Menu item text for effect pan zoom. -->
+    <string name="editor_pan_zoom_effect">Pan zoom</string>
+    <!-- Menu item text for effect gradient. -->
+    <string name="editor_gradient_effect">Gradient</string>
+    <!-- Menu item text for effect sepia. -->
+    <string name="editor_sepia_effect">Sepia</string>
+    <!-- Menu item text for effect negative. -->
+    <string name="editor_negative_effect">Negative</string>
+    <!-- Menu item text for no effect. -->
+    <string name="editor_no_effect">No effect</string>
+    <!-- Menu item used to add a transition at the beginning of the image or video clip. -->
+    <string name="editor_add_begin_transition">Transition into clip</string>
+    <!-- Menu item used to add a transition at the end of the image or video clip. -->
+    <string name="editor_add_end_transition">Transition out of clip</string>
+    <!-- Menu item used to change a transition type and/or duration. -->
+    <string name="editor_change_transition">Change transition</string>
+    <!-- Toast message used when a video clip needs to be downloaded before it can be used -->
+    <string name="editor_video_load">The video clip download has started. You\'ll be notified when it completes.</string>
+    <!-- Toast message used when an image needs to be downloaded before it can be used -->
+    <string name="editor_image_load">The image download has started. You\'ll be notified when it completes.</string>
+    <!-- The title displayed in the contextual action bar when a transition is selected. -->
+    <string name="editor_transition_title">Transition</string>
+
+    <!-- Audio tracks -->
+    <!-- Enable looping for the audio track. -->
+    <string name="editor_enable_loop_audio_track">Loop</string>
+    <!-- Disable looping for the audio track. -->
+    <string name="editor_disable_loop_audio_track">Don\'t loop</string>
+    <!-- Mute the audio track. -->
+    <string name="editor_mute">Mute</string>
+    <!-- Unmute the audio track. -->
+    <string name="editor_unmute">Unmute</string>
+    <!--
+         Text displayed in menu for ducking (lower background music volume
+         if there is sound in foreground) [CHAR LIMIT = 20]
+    -->
+    <string name="audio_track_menu_duck">Ducking</string>
+
+    <!-- Project picker -->
+    <!-- Text displayed in the project picker new project option [CHAR_LIMIT=18] -->
+    <string name="projects_new_project">Create new project</string>
+    <!-- Text displayed in the project name dialog title. -->
+    <string name="projects_project_name">Project name</string>
+
+    <!-- Aspect ratio labels -->
+    <!-- Menu item aspect ratios are displayed in a single item select dialog. -->
+    <string name="aspect_ratio_11_9">11 x 9</string>
+    <string name="aspect_ratio_16_9">16 x 9</string>
+    <string name="aspect_ratio_3_2">3 x 2</string>
+    <string name="aspect_ratio_4_3">4 x 3</string>
+    <string name="aspect_ratio_5_3">5 x 3</string>
+
+    <!-- Error messages -->
+    <!-- Error message displayed in a toast if a project cannot be created because the storage is not accessible. -->
+    <string name="editor_storage_not_available">Can\'t create the project because storage isn\'t accessible.</string>
+    <!-- Error message displayed in a toast if a project cannot be created. -->
+    <string name="editor_create_error">Can\'t create the project because of an error.</string>
+    <!-- Error message displayed in a toast if a project cannot be loaded. -->
+    <string name="editor_load_error">Can\'t load the project because of an error. Do you want to delete this project?</string>
+    <!-- Error message displayed in a toast if the aspect ratio cannot be changed. -->
+    <string name="editor_aspect_ratio_error">Can\'t change the aspect ratio.</string>
+    <!-- Error message displayed in a toast if a theme cannot be applied. -->
+    <string name="editor_apply_theme_error">Can\'t apply the theme.</string>
+    <!-- Error message displayed in a toast if a movie cannot be applied. -->
+    <!-- <string name="editor_export_error">Can\'t export the movie because of an error.</string> -->
+    <string name="export_error">Can\'t export the merged video because of an error.</string>
+    <!-- Error message displayed in a toast if a project cannot be saved. -->
+    <string name="editor_saved_error">Can\'t save the project.</string>
+    <!-- Error message displayed in a toast if an error had occurred while releasing the project. -->
+    <string name="editor_release_error">Couldn\'t release the project because of an error.</string>
+    <!-- Error message displayed in a toast if an error had occurred while releasing the project. -->
+    <string name="editor_delete_error">Couldn\'t delete the project because of an error.</string>
+    <!-- Error message displayed in a toast if an error occurs if a video clip cannot be added to the project. -->
+    <!-- <string name="editor_add_video_clip_error">Can\'t add the video clip to your project.</string> -->
+    <!-- Error message displayed in a toast if an error occurs if an image cannot be added to the project. -->
+    <!-- <string name="editor_add_image_error">Can\'t add the image to your project.</string> -->
+    <!-- Error message displayed in a toast if video clip or an image cannot be moved in the timeline. -->
+    <string name="editor_move_media_item_error">Can\'t move the item.</string>
+    <!-- Error message displayed in a toast if video clip or image cannot be removed from the timeline. -->
+    <string name="editor_remove_media_item_error">Can\'t remove the item.</string>
+    <!-- Error message displayed in a toast if the rendering mode of an image/video clip cannot be changed. -->
+    <string name="editor_set_rendering_mode_error">Can\'t set the rendering mode.</string>
+    <!-- Error message displayed in a toast if the image duration cannot be changed. -->
+    <string name="editor_set_media_item_duration_error">Can\'t set the image duration.</string>
+    <!-- Error message displayed in a toast if a video clip cannot be trimmed. -->
+    <string name="editor_set_media_item_boundaries_error">Can\'t set the video clip boundaries.</string>
+    <!-- Error message displayed in a toast if a transition cannot be added. -->
+    <string name="editor_add_transition_error">Can\'t add the transition.</string>
+    <!-- Error message displayed in a toast if a transition cannot be removed. -->
+    <string name="editor_remove_transition_error">Can\'t remove the transition.</string>
+    <!-- Error message displayed in a toast if a transition duration cannot be changed. -->
+    <string name="editor_set_transition_duration_error">Can\'t set the transition duration.</string>
+    <!-- Error message displayed in a toast if an overlay cannot be added. -->
+    <string name="editor_add_overlay_error">Can\'t add the overlay.</string>
+    <!-- Error message displayed in a toast if an overlay cannot be removed. -->
+    <string name="editor_remove_overlay_error">Can\'t remove the overlay.</string>
+    <!-- Error message displayed in a toast if an overlay duration cannot be changed. -->
+    <string name="editor_set_duration_overlay_error">Couldn\'t set the overlay duration.</string>
+    <!-- Error message displayed in a toast if an overlay start time cannot be changed. -->
+    <string name="editor_set_start_time_overlay_error">Couldn\'t set the overlay start time.</string>
+    <!-- Error message displayed in a toast if an overlay text cannot be changed. -->
+    <string name="editor_set_user_attributes_overlay_error">Can\'t set overlay attributes.</string>
+    <!-- Error message displayed in a toast if an effect cannot be added. -->
+    <string name="editor_add_effect_error">Can\'t add the effect.</string>
+    <!-- Error message displayed in a toast if an effect cannot be removed. -->
+    <string name="editor_remove_effect_error">Can\'t remove the effect.</string>
+    <!-- Error message displayed in a toast if an audio track cannot be added. -->
+    <string name="editor_add_audio_track_error">Can\'t add the audio track.</string>
+    <!-- Error message displayed in a toast if an audio track cannot be removed. -->
+    <string name="editor_remove_audio_track_error">Can\'t remove the audio track.</string>
+    <!-- Error message displayed in a toast if an audio track cannot be trimmed. -->
+    <string name="editor_set_audio_track_boundaries_error">Can\'t trim the audio track.</string>
+    <!-- Error message displayed in a toast if a transition cannot be added. -->
+    <string name="editor_transition_too_short">Can\'t add a transition. The transition would be too short.</string>
+    <!-- Error message displayed in a toast when a video clip or an image cannot be downloaded. -->
+    <string name="editor_media_load_error">Can\'t download the file.</string>
+    <!-- Error message displayed in a toast if a project cannot be previewed. -->
+    <string name="editor_preview_error">Can\'t show the project preview because of an error.</string>
+
+    <!-- Export options dialog -->
+    <!-- The title of the export dialog. -->
+    <string name="export_dialog_export">Export</string>
+    <!-- The label of the movie size spinner. -->
+    <string name="export_dialog_movie_size">Movie size</string>
+    <!-- The label of the movie quality spinner. -->
+    <string name="export_dialog_movie_quality">Movie quality</string>
+    <!-- The low quality option. -->
+    <string name="export_dialog_movie_quality_low">Low</string>
+    <!-- The medium quality option. -->
+    <string name="export_dialog_movie_quality_medium">Medium</string>
+    <!-- The high quality option. -->
+    <string name="export_dialog_movie_quality_high">High</string>
+
+    <!-- Pan and zoom activity -->
+    <!-- The title of the Pan & zoom activity. -->
+    <string name="pan_zoom_title">Pan &amp; zoom effect</string>
+    <!-- The label for the start rectangle checkbox. -->
+    <string name="pan_zoom_start">Start</string>
+    <!-- The label for the end rectangle checkbox. -->
+    <string name="pan_zoom_end">End</string>
+    <string name="pan_zoom_small_image_error">The image is too small to apply the pan &amp; zoom effect.</string>
+
+    <!-- Themes names and titles -->
+    <!-- The label/name for Theme 1. -->
+    <string name="theme_name_travel">Travel</string>
+    <!-- The sample title for Theme 1. -->
+    <string name="theme_travel_title">My trip to California</string>
+    <!-- The sample subtitle for Theme 1. -->
+    <string name="theme_travel_subtitle">San Francisco</string>
+    <!-- The label/name for Theme 2. -->
+    <string name="theme_name_surfing">Surfing</string>
+    <!-- The sample title for Theme 2. -->
+    <string name="theme_surfing_title">My surfing adventure</string>
+    <!-- The sample subtitle for Theme 2. -->
+    <string name="theme_surfing_subtitle">SF Bay</string>
+    <!-- The label/name for Theme 3. -->
+    <string name="theme_name_film">Film</string>
+    <!-- The sample title for Theme 3. -->
+    <string name="theme_film_title">My short movie</string>
+    <!-- The sample subtitle for Theme 3. -->
+    <string name="theme_film_subtitle">Fun on the Bay</string>
+    <!-- The label/name for Theme 4. -->
+    <string name="theme_name_rock_and_roll">Rock and roll</string>
+    <!-- The sample title for Theme 4. -->
+    <string name="theme_rock_and_roll_title">The concert</string>
+    <!-- The sample subtitle for Theme 4. -->
+    <string name="theme_rock_and_roll_subtitle">Two and a half barrels</string>
+
+    <!-- Overlay names -->
+    <!-- The overlay type 1 name -->
+    <string name="overlay_preview_center">Centered title</string>
+    <!-- The overlay type 2 name -->
+    <string name="overlay_preview_bottom">Bottom title</string>
+
+    <!-- Overlay sample titles -->
+    <!-- The label/name for overlay 1. -->
+    <string name="overlay_title">Title</string>
+    <!-- The sample title for overlay 1. -->
+    <string name="overlay_title_sample">My trip</string>
+    <!-- The sample subtitle for overlay 1. -->
+    <string name="overlay_subtitle_sample">San Francisco</string>
+
+    <!-- Overlay title activity EditText labels -->
+    <!-- The dialog label for the overlay name. -->
+    <string name="overlays_select_type">Choose title template</string>
+    <!-- The dialog label for the overlay sample title. -->
+    <string name="overlay_title_label">Title</string>
+    <!-- The dialog label for the overlay sample subtitle. -->
+    <string name="overlay_subtitle_label">Subtitle</string>
+    <!-- The text displayed on the button used to change overlay title template. -->
+    <string name="overlay_change_title_template_button_text">Change template</string>
+
+    <!-- Effect names -->
+    <!-- The effects selection dialog title. -->
+    <string name="effects_select_effect">Effects</string>
+    <!-- Effect 1 name. -->
+    <string name="effect_pan_zoom">Pan &amp; zoom effect</string>
+    <!-- Effect 2 name. -->
+    <string name="effect_gradient">Gradient effect</string>
+    <!-- Effect 3 name. -->
+    <string name="effect_sepia">Sepia effect</string>
+    <!-- Effect 4 name. -->
+    <string name="effect_negative">Negative effect</string>
+    <!-- Effect 5 name. -->
+    <string name="effect_fifties">Fifties effect</string>
+
+    <!-- Transition names -->
+    <!-- The transition selection dialog title. -->
+    <string name="transitions_select_transition">Choose transition</string>
+    <!-- The name of the transition using a contour alpha mask. -->
+    <string name="transitions_alpha_countour">Contour alpha</string>
+    <!-- The name of the transition using a diagonal alpha mask. -->
+    <string name="transitions_alpha_diagonal">Diagonal alpha</string>
+    <!-- The name of the crossfade transition. -->
+    <string name="transitions_crossfade">Crossfade</string>
+    <!-- The name of the fade to and from black transition. -->
+    <string name="transitions_fade_black">Fade to and from black</string>
+    <!-- The name of the left to right transition. -->
+    <string name="transitions_sliding_right_out_left_in">Sliding right out left in</string>
+    <!-- The name of the right to left transition. -->
+    <string name="transitions_sliding_left_out_right_in">Sliding left out right in</string>
+    <!-- The name of the bottom to top transition. -->
+    <string name="transitions_sliding_top_out_bottom_in">Sliding top out bottom in</string>
+    <!-- The name of the top to bottom transition. -->
+    <string name="transitions_sliding_bottom_out_top_in">Sliding bottom out top in</string>
+    <!-- The text which displays the duration of a transition as a decimal number (e.g. "1.5 sec"). -->
+    <string name="transitions_duration"><xliff:g id="seconds">%(,.1f</xliff:g> sec</string>
+
+    <!-- Rendering modes displayed in the single choice selection dialog -->
+    <!-- The black borders rendering mode. -->
+    <string name="rendering_mode_black_borders">Black borders</string>
+    <!-- The stretch to fit rendering mode. -->
+    <string name="rendering_mode_stretch">Stretch to fit</string>
+    <!-- The cropping rendering mode. -->
+    <string name="rendering_mode_crop">Crop</string>
+
+    <!-- Generic strings -->
+    <!-- Displayed in dialog buttons. -->
+    <string name="yes">Yes</string>
+    <!-- Displayed in dialog buttons. -->
+    <string name="no">No</string>
+    <!-- Displayed in dialog buttons. -->
+    <string name="done">Done</string>
+    <!-- Displayed in dialog buttons and menu items. -->
+    <string name="edit">Edit</string>
+    <!-- Displayed in dialog buttons and menu items. -->
+    <string name="remove">Remove</string>
+    <!-- Displayed in the carousel if the project does not have a name. -->
+    <string name="untitled">Untitled</string>
+    <string name="app_name">My Story</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tell_your_story">TELL OTHERS ABOUT YOUR STORY</string>
+    <string name="alert_dialog_story_name">Tell your story</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="enter_story_title">Enter your story title</string>
+    <string name="select_topic">Select a Topic</string>
+    <string name="select_description_hint">Separate tags with a comma</string>
+    <string name="cancel">Cancel</string>
+    <string name="goto_know">Go to Topics screen</string>
+    <string name="proceed">Proceed</string>
+    <string name="seconds">seconds</string>
+    <string name="minute_and_seconds">minutes_seconds</string>
+    <string name="minutes">minutes</string>
+    <string name="hour_and_minutes">hour_minutes</string>
+    <string name="hours_and_minutes">hours_minutes</string>
+    <string name="foldername">KnowMyStory</string>
+    <string name="trim">Trim Video</string>
+    <string name="trim_only">Trim</string>
+    <string name="save">Save</string>
+    <string name="re_record">Re-Record</string>
+    <string name="upload">Upload</string>
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+    <string name="description">Media Controls</string>
+    <string name="story_title">Enter Story Title (eg. John\'s Story)</string>
+    <string name="start_your_story">Start your story</string>
+    <string name="network_conn_error">No Network connection!</string>
+    <string name="connection_time_out">Connection time out!</string>
+    <string name="no_video_found">No Video Found!</string>
+    <string name="video1_error">Please re-record the Introduction video.</string>
+    <string name="video2_error">Please re-record the Setup video.</string>
+    <string name="video3_error">Please re-record the God Moment video.</string>
+    <string name="video4_error">Please re-record the The Word video.</string>
+    <string name="video5_error">Please re-record the Conclusion video.</string>
+    <string name="no_enuf_mem">Your device is running low on memory. Please try again after clearing storage space and closing any applications running in the background.</string>
+
+    <!-- Message shown when topic list returns null -->
+    <string name="network_error">Cannot fetch topic list</string>
+    <string name="text_introduction">My name is ______, and this is my story.</string>
+    <string name="text_setup">Describe a struggle in your life or how you have seen God’s provision in your life.</string>
+    <string name="text_god_moment">Describe how your life has changed because of your personal relationship with Jesus.</string>
+    <string name="text_the_word">Share the Bible verse that means the most to you and why, or one that helped you during this time of struggle and how.</string>
+    <string name="text_conclusion">My name is _____, and I will be a light.</string>
+
+    <!-- DESCRIPTION PAGE -->
+    <string name="story_tag_hint">Enter Video Tags (eg. Purpose, Jess, Addiction)</string>
+    <string name="story_desc_hint">Enter Video Description (eg. This is my story about how God...)</string>
+    <!-- <string name="audio_track_menu_duck">Ducking</string> -->
+
+
+    <!-- TAB TEXT -->
+    <string name="tab_title">Title</string>
+    <string name="tab_intro">Introduction</string>
+    <string name="tab_setup">Setup</string>
+    <string name="tab_god_moment">God Moment</string>
+    <string name="tab_the_word">The Word</string>
+    <string name="tab_conclusion">Conclusion</string>
+    <string name="tab_music">Music</string>
+    <string name="tab_merge">Upload</string>
+    <string name="tab_description">Description</string>
+    <string name="tab_region">Region</string>
+    <string name="tab_count_1">1</string>
+    <string name="tab_count_2">2</string>
+    <string name="tab_count_3">3</string>
+    <string name="tab_count_4">4</string>
+    <string name="tab_count_5">5</string>
+    <string name="tab_count_6">6</string>
+    <string name="tab_count_7">7</string>
+    <string name="tab_count_8">8</string>
+    <string name="tab_count_9">9</string>
+    <string name="tab_count_10">10</string>
+
+    <!-- MUSIC LIST -->
+    <string name="music_no_music">01. No Music</string>
+    <string name="music_grey_sky">02. A grey sky</string>
+    <string name="music_arctic">03. Arctic - Underneath it all</string>
+    <string name="music_darkness">04. Darkness falls</string>
+    <string name="music_elevated">05. Elevated</string>
+    <string name="music_into_wild">06. Into the wild - Something Beautiful</string>
+    <string name="music_outreach">07. Outreach - Changing</string>
+    <string name="music_secret_place">08. Secret place</string>
+    <string name="music_solemn_drone">09. Solemn drone - Good to be here</string>
+
+    <!-- REGION TEXT -->
+    <string name="help_others_find_your_story">HELP OTHERS FIND YOUR STORY</string>
+    <string name="tell_others_about_your_story">TELL OTHERS ABOUT YOUR STORY</string>
+    <string name="language_hint">Choose your Language</string>
+    <string name="country_hint">Choose your Country</string>
+    <!-- Horizontal progress dialog -->
+
+
+    <!-- SOCIAL NETWORKING -->
+    <string name="compressing">Compressing</string>
+    <string name="button_record">RECORD</string>
+    <string name="button_pick">GALLERY</string>
+    <string name="button_upload">UPLOAD TO YTDL</string>
+    <string name="button_submit">SUBMIT TO YTDL</string>
+    <string name="btn_upload_label">Upload</string>
+    <string name="menu_tell_your_story">TELL YOUR STORY</string>
+    <string name="menu_tutorial_video">TUTORIAL VIDEO</string>
+    <string name="menu_my_profile">MY PROFILE</string>
+    <string name="menu_settings">INFORMATION</string>
+    <string name="menu_mystory">MY STORIES</string>
+    <string name="menu_watch">WATCH</string>
+    <string name="start_app">Starting application:</string>
+    <string name="center_click">Center has been clicked</string>
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="circles_title">Visible circles:</string>
+    <string name="revoke_access_button_name">Revoke</string>
+    <string name="status_sign_in_required">Sign-in required</string>
+    <string name="status_signed_out">Signed out</string>
+    <string name="playing_uploaded_video">Playing uploaded video</string>
+    <string name="youtube_upload_started">YouTube Direct Lite upload started</string>
+    <string name="youtube_upload">YouTube upload</string>
+
+    <!-- MENU SUBTEXT -->
+    <string name="menu_subtext_watch">SEE HOW AWESOME GOD IS THROUGH STORIES FROM ALL OVER THE WORLD</string>
+    <string name="menu_subtext_tell_your_story">SHARE THE GOOD NEWS OF HOW GOD HAS CHANGED YOUR LIFE</string>
+    <string name="menu_subtext_my_story">HERE IS WHERE ALL THE STORIES YOU HAVE TOLD ARE KEPT</string>
+    <string name="menu_subtext_tutorial_video">LEARN WHAT MY STORY IS ALL ABOUT AND HOW TO USE THE APP</string>
+    <string name="menu_subtext_settings">LEARN MORE ABOUT US AND THE TECHNICAL STUFF</string>
+    <string name="menu_subtext_my_profile">SHARE YOUR PROFILE, PICTURE AND PERSONALITY TO REFLECT YOUR STORY</string>
+    <!-- SIGNIN PAGE -->
+    <string name="signin">Sign In</string>
+    <string name="terms_cond_text">I agree to the terms and conditions</string>
+
+    <!-- uplolad home -->
+
+    <string name="playing_the_video_in_upload_progress">Playing the video in upload progress</string>
+    <string name="not_signed_in">Not signed in</string>
+    <string name="dev_setup_explanation">If you\'re seeing this screen, congratulations! You\'ve set up the dependencies for YouTube Direct Lite correctly. You just need to set up the following for the app to work correctly:</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+    <string name="refresh">Refresh</string>
+    <string name="accounts">Accounts</string>
+    <string name="initiation_started">Initiation Started</string>
+    <string name="initiation_completed">Initiation Completed</string>
+    <string name="upload_in_progress">Direct Lite upload in progress</string>
+    <string name="yt_upload_completed">YouTube Upload Completed</string>
+    <string name="upload_completed">Upload completed</string>
+    <string name="upload_not_started">Upload Not Started!</string>
+    <string name="yt_upload_failed">Video Upload Failed.Please try to upload your video again.</string>
+    <string name="merge_failed">Merging of Video files Failed</string>
+    <string name="merged_video_notfound">Video not found!</string>
+    <string name="video_not_recorded">Video not recorded!</string>
+    <string name="reauth_required">Re-login required</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="cant_access_play">Can\'t access to Google Play services</string>
+    <string name="title_activity_play">Click below to submit</string>
+    <string name="send">Click send</string>
+    <string name="title_activity_review">Click below to upload</string>
+    <string name="pick_one_of_your_videos_to_submit">Submit an existing YouTube video or upload a new video using the options below</string>
+    <string name="no_videos_to_show_here_">No videos to show here.</string>
+    <string name="avatar">avatar</string>
+    <string name="pick_or_record_a_video_to_upload">Upload an existing video from your device or record a new one</string>
+    <string name="see_the_newly_uploaded_video">See the newly uploaded video</string>
+    <string name="watch_your_video">Watch your video</string>
+    <string name="video_submitted_to_ytdl">Video submitted to YTDL</string>
+    <string name="status_signing_in">Signing in with Google+…</string>
+    <string name="signed_in_as">Signed in as %s</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="ffmpegnotsup">FFmpeg Not supported</string>
+    <string name="longmerge">Please wait. This might take a few minutes depending on file size.</string>
+    
+    <!-- Profile page -->
+    <string name="profile_progress_updating">Updating...</string>
+    <string name="facebook_app_id">1418038948516041</string>
+
+    <string-array name="country_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegowina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>Brunei Darussalam</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote D\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Falkland Islands (Malvinas)</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>France, Metropolitan</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard and Mc Donald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran (Islamic Republic of)</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>North Korea</item>
+        <item>Korea, Republic of</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Lao People\'s Democratic Republic</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libyan Arab Jamahiriya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>FYROM</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia, Federated States of</item>
+        <item>Moldova, Republic of</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russian Federation</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovak Republic</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia &amp; South Sandwich Islands</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>St. Helena</item>
+        <item>St. Pierre and Miquelon</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen Islands</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syrian Arab Republic</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania, United Republic of</item>
+        <item>Thailand</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City State (Holy See)</item>
+        <item>Venezuela</item>
+        <item>Viet Nam</item>
+        <item>Virgin Islands (British)</item>
+        <item>Virgin Islands (U.S.)</item>
+        <item>Wallis and Futuna Islands</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Democratic Republic of Congo</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <!-- Settings -->
+    <string name="settings_heading">INFORMATION</string>
+    <string name="settings_aboutmystory">ABOUT MY STORY</string>
+    <string name="settings_privacy">PRIVACY POLICY</string>
+    <string name="settings_rateapp">RATE THE APP</string>
+    <string name="settings_copyright">COPYRIGHT</string>
+    <string name="settings_terms">TERMS &amp; CONDITIONS</string>
+    <string name="settings_logout">Logout</string>
+
+    <!-- About My Story -->
+    <string name="about_heading">ABOUT MY STORY</string>
+    <string name="about_text">My Story is a simple way to share the story of how God has impacted your life and explore the stories of others.\n\nRecord a video telling your story, select a scripture that has impacted you, and share the finished story with others letting them know that God has changed your life.\n\nMy Story integrates with MyStory.buzz so that you can publish your story on a platform filled with stories of God\'s impact in the world. It also integrates with social media platforms and allows you to share publicly or privately with friends you\'d like to encourage. \n</string>
+    <string name="coachmark_gotit">GOT IT</string>
+    <string name="coachmark_text">Swipe UP or DOWN to access the features</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_skip">Skip</string>
+    <!-- Finish -->
+    <string name="finish_delete_text">Are you sure you want to delete this story?</string>
+    <string name="finish_del">Delete</string>
+    <string name="finish_heading">Finish your Story</string>
+    <string name="finish_text">Your Story is not complete, would you like to:</string>
+    <string name="finish_delete">Delete and Start over</string>
+    <string name="finish_later">Finish Later</string>
+    <string name="finish_now">Finish Now</string>
+    <string name="watch_dialog">Network connectivity issue.</string>
+    <string name="watch_try">Try Again</string>
+
+    <!-- My Profile -->
+    <string name="myprofile_heading">MY PROFILE</string>
+    <string name="myprofile_edit">Edit Profile Pic</string>
+    <string name="myprofile_firstname">FirstName</string>
+    <string name="myprofile_secondname">LastName</string>
+    <string name="myprofile_gmail">Email</string>
+    <string name="myprofile_gender">Gender</string>
+    <string name="myprofile_male">Male</string>
+    <string name="myprofile_female">Female</string>
+    <string name="myprofile_dob">DOB</string>
+    <string name="myprofile_address">Address</string>
+    <string name="myprofile_city">City</string>
+    <string name="myprofile_state">State</string>
+    <string name="myprofile_country">Country</string>
+    <string name="myprofile_zip">Zip Code</string>
+    <string name="myprofile_phone">Phone Number</string>
+    <string name="myprofile_cancel">Cancel</string>
+    <string name="myprofile_editprofile">Edit Profile</string>
+    <string name="myprofile_save">Save</string>
+    <string name="upload_heading">Video Uploaded Successfully</string>
+    <string name="upload_heading_fail">Video Upload Failed.Please try to upload your video again.</string>
+     <!--
+     Update Text: Confirmation Message after Video Upload.
+     TextChanged added additonal sentence as per client requirement.
+     -->
+    <string name="upload_success_header">Your Video has been uploaded successfully</string>
+    <string name="upload_success">You can make your video private at any time in the My Stories screen.</string>
+    <string name="userdetail_update_success">User Updated Successfully.</string>
+    <string name="TimeOut_error">Connection timeout!</string>
+    <string name="userdetail_update_fail">Sorry, currently network is not available!!!</string>
+    <string name="male">"Male"</string>
+    <string name="female">"Female"</string>
+
+    <!-- Scripture offline -->
+    <string name="scripture_keyword">Select a Keyword</string>
+    <string name="scripture_offline">Offline</string>
+    <string name="scripture_online">Online</string>
+    <string name="online_title">My Story</string>
+    <string name="no_server_response">No server response</string>
+    <string name="please_select">Please select a topic</string>
+    <string name="ratelimiting">Unable to login. Please try again later.</string>
+    <string name="online_message">Please enter a valid keyword for searching online</string>
+    <string name="text_empty_error">Please enter a Title</string>
+    <string name="trim_length_error">Please choose a selection time more than 1 millisecond.</string>
+    <string name="trim_not_possible">Video length too short to be trimmed.</string>
+    <string name="empty_msg">No matching results found. Please try again.</string>
+    <string name="scripture_select">Confirm</string>
+    <!-- Scriptures online -->
+    <string name="scripture_book">Book</string>
+    <string name="scripture_chapter">Chapter</string>
+    <string name="scripture_verse">Verse</string>
+    <string name="scripture_help_button">Help me find a Verse</string>
+    <string name="chose_again">Choose Again</string>
+    <string name="selfievideo_novideo">You have not uploaded your selfie video yet, once it’s uploaded you will be able to find it here</string>
+
+    <!-- Dialog texts -->
+    <string name="dialog_loading">"Loading..."</string>
+    <string name="dialog_signin">"Signing In..."</string>
+    <string name="dialog_trim">"Trimming..."</string>
+    <string name="dialog_save">"Saving..."</string>
+    <string name="dialog_sync">"Syncing with server..."</string>
+    <string name="dialog_merge">"Merging..."</string>
+    <string name="dialog_fetching">"Fetching..."</string>
+    <string name="settings_logout_popup">User Logged Out Successfully</string>
+    <!-- Login Page -->
+    <string name="facebook">"Facebook"</string>
+    <string name="google">"Google"</string>
+    <string name="twitter">"Twitter"</string>
+    <!-- BG MUSIC -->
+    <string name="music_select_error">"Please select a Background Music from the list"</string>
+    <string name="title_input_error">"Please input a Title."</string>
+    <string name="music_select_error_heading">"Background Music not selected"</string>
+    <string name="dialog_fetching_longdata">"Loading..Please wait"</string>
+    <string name="build_no">Version: 1.5 Build no: 21</string>
+
+</resources>

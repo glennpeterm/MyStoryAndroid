@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.onehope.mystory"
+    android:versionCode="9"
+    android:versionName="1.5" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+`	
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/short_app_name"
+        android:largeHeap="true"
+        android:screenOrientation="landscape" >
+        <service android:name="dogtim.android.videoeditor.service.ApiService" />
+
+        <activity
+            android:name="com.main.MainActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="dogtim.android.videoeditor.VideoEditorActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.util.VideoEditorActvityLolipop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="dogtim.android.videoeditor.VideoPreviewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.TransitionsActivity"
+            android:label="@string/transitions_select_transition" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.OverlayTitleEditor"
+            android:label="@string/overlay_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.OverlayTitleTemplatePicker"
+            android:label="@string/overlays_select_type" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.EffectsActivity"
+            android:label="@string/effects_select_effect" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dogtim.android.videoeditor.KenBurnsActivity"
+            android:label="@string/pan_zoom_title" >
+        </activity>
+        <activity
+            android:name="com.main.VideoRecording"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.videoeditor.media.CustomCameraActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tabview.TabViewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.Upload_Progress_Activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.tabview.FinishActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.tabview.Tab1Activity" />
+        <activity android:name="com.tabview.Tab3Activity" />
+        <activity android:name="com.tabview.Tab2Activity" />
+        <activity android:name="com.tabview.Tab4Activity" />
+        <activity android:name="com.tabview.Tab5Activity" />
+        <activity android:name="com.tabview.Tab6Activity" />
+        <activity android:name="com.tabview.Tab7Activity" />
+        <activity android:name="com.tabview.BGMusicActivity" />
+        <activity android:name="com.tabview.DescriptionActivity" />
+        <activity
+            android:name="com.tabview.RegionActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.trim.TrimActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.videoeditor.media.VideoEditorTest"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.videoeditor.media.VideoPreviewOption"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.videoeditor.media.VideoPreviewOptionTab2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.videoeditor.media.VideoPreviewOptionTab3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.videoeditor.media.VideoPreviewOptionTab4"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.videoeditor.media.VideoPreviewOptionTab5"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.test.socialnetwork.Settings_Activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.test.socialnetwork.AboutMyStory_Activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.test.socialnetwork.SignInActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.allchannelvideos.ChannelVideos"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.allchannelvideos.SelfieVideos"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.test.socialnetwork.TutorialVideoLaunch"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <activity
+            android:name="com.test.socialnetwork.PhotoLaunchActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mediacontrols.VideoPlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.trim.VideoTrimmingService" >
+        </service>
+        <!-- Twitter specific -->
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="83974d08d0cbc45f9457ff36531ebd1af78320c3" />
+
+        <!-- SOCIAL NETWORKING -->
+        <activity
+            android:name="com.test.socialnetwork.HomeScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailedActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.test.socialnetwork.ProfileActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.test.socialnetwork.UploadActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.socialnetwork.UploadActivity" />
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.ProfileDetailsActivity"
+            android:parentActivityName="com.test.socialnetwork.UploadActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.UploadFinal"
+            android:parentActivityName="com.test.socialnetwork.HomeScreen"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.socialnetwork.HomeScreen" />
+        </activity>
+        <activity
+            android:name="com.test.socialnetwork.Youtubeupload"
+            android:parentActivityName="com.test.socialnetwork.HomeScreen"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.test.socialnetwork.HomeScreen" />
+        </activity>
+
+        <!-- Facebook Specific -->
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.NativeAppCallContentProvider"
+            android:authorities="com.facebook.app.NativeAppCallContentProvider355198514515821"
+            android:exported="true" />
+
+        <!-- Google PLus Specific -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!-- Youtube upload specific -->
+
+        <activity
+            android:name="com.google.ytdl.MainActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName="com.google.ytdl.MainActivity" >
+        </activity>
+
+        <service
+            android:name="com.google.ytdl.UploadService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.google.ytdl.PlayActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName="com.google.ytdl.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.google.ytdl.ReviewActivity"
+            android:label="@string/title_activity_review"
+            android:parentActivityName="com.google.ytdl.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.scriptures.Wheel_Activity"
+            android:label="@string/settings_heading"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.scriptures.Verse_Activity"
+            android:label="@string/settings_heading"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.dialog.DialogActivity"
+            android:label="@string/settings_heading"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.dialog.ReloadDialogActivity"
+            android:label="@string/settings_heading"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.scriptures.ScriptureOfflineActivity"
+            android:label="@string/settings_heading"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.supportclasses.NoNetworkDialog"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.dialog.LoaderActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <receiver android:name="com.supportclasses.ConnectivityReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d049672ebfc0deaf912ebb27c081e6b60fbf1e6f" />
+    </application>
+
+</manifest>

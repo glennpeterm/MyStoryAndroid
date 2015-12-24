@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/btn_signin_back" />
+
+            <TextView
+                android:id="@+id/tvVerseIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="7dp"
+                android:text="@string/settings_aboutmystory"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+               android:layout_height="5dp"
+            android:layout_marginBottom="5dp"
+            android:alpha="0.5"
+            android:background="@drawable/gradient_effect" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/about_text"
+                android:textColor="@color/dark_grey"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/ibLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:src="@drawable/one_hope_logo" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

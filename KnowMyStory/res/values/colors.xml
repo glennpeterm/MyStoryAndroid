@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2010 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+    <color name="playhead_edge">#c0cccccc</color>
+    <color name="playhead_fill">#800667c8</color>
+
+    <color name="audio_waveform">#ffcf8104</color>
+    <color name="audio_loop_separator">#40cf8104</color>
+
+    <color name="playhead_tick_color">#80cccccc</color>
+
+    <!-- <color name="orange">#ffcf8104</color> -->
+    
+    
+    
+    <!-- KNOW MY STORY COLORS -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#eb7a00</color>
+    <color name="transparent_orange">#80eb7a00</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="lightgrey">#C0C0C0</color>
+    <!-- KMS :FONTS COLOR -->
+     <color name="dark_grey">#363636</color>
+     <color name="red">#DE2B2B</color>
+      <color name="light_grey">#666666</color>
+      <color name="lightest_grey">#929292</color>
+       <color name="transparent">#0000ffff</color>
+        <color name="green_music_selected">#81F79F</color>
+         <color name="twitter">#47BAE7</color>
+          <color name="google">#F52C23</color>
+          <color name="facebook">#5A6E9A</color>
+           <color name="blue">#0000FF</color>
+           <color name="greycolor">#A9A9A9</color>
+           
+</resources>

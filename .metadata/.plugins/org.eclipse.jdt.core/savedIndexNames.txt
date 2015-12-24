@@ -1,0 +1,21 @@
+INDEX VERSION 1.126+D:\GitHub\MyStory\.metadata\.plugins\org.eclipse.jdt.core
+15952370.index
+1481367670.index
+51467238.index
+200170962.index
+386513496.index
+2602387754.index
+1305245534.index
+1571171023.index
+3045957671.index
+1081022019.index
+2164250285.index
+1689725455.index
+3440533352.index
+1623492582.index
+2484303564.index
+74586509.index
+52757846.index
+3244111202.index
+2795315227.index
+3282578461.index

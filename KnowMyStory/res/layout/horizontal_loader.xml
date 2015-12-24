@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <!-- <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="75"
+        android:progressDrawable="@drawable/rotate_spinner" /> -->
+        <ImageView
+            android:id="@+id/ImageView_spinner"
+            android:layout_centerInParent="true"
+             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/spinner"/>
+<TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dialog_merge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/merging_progress_fontsize"
+        android:layout_below="@+id/ImageView_spinner"
+        />
+<TextView
+        android:id="@+id/tv_progress_percent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0 %"
+        android:textColor="@color/white"
+        android:textSize="@dimen/merging_progress_fontsize"
+         android:layout_below="@+id/ImageView_spinner"
+         android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/textView1"
+        />
+
+<TextView android:id="@+id/mergetext"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:text="@string/longmerge"
+       android:gravity="center_horizontal"
+       android:layout_centerHorizontal="true"
+       android:textColor="@color/white"
+       android:layout_below="@+id/tv_progress_percent"
+       />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/mergetext"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_marginTop="10dp"
+        android:progressDrawable="@drawable/seekbar_loader"
+        android:secondaryProgress="0" />
+
+   <!--  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+   <!--  <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+</RelativeLayout>

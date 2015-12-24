@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_videotrim"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/orange"
+        android:text="@string/trim_only"
+        android:textColor="@color/white"
+        android:textSize="@dimen/trim_btn_trim" />
+
+    <Button
+        android:id="@+id/btn_trim_cancel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent_black"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/trim_btn_cancel" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_video_preview_play" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/imageview_container_layout"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/textview_minValue"
+            android:layout_width="0dp"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="33dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:textSize="@dimen/trim_duration_textsize"
+            android:text="00:00:00"
+            android:textColor="@color/orange"
+            />
+
+        <TextView
+            android:id="@+id/textview_maxValue"
+            android:layout_width="0dp"
+            android:layout_marginRight="33dp"
+            android:gravity="center_vertical|right"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/trim_duration_textsize"
+            android:layout_weight="1"
+             android:textColor="@color/orange"
+            android:text="00:00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageview_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/empty_layout"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/seekbar_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+    
+
+</RelativeLayout>

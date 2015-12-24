@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/rlnext"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llwheel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/scripture_book"
+                        android:textColor="@color/light_grey"
+                        android:textSize="18sp" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_book"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llwheel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/llwheel1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvchapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="7dp"
+                        android:text="@string/scripture_chapter"
+                        android:textColor="@color/light_grey"
+                        android:textSize="18sp" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_chapter"
+                        android:layout_width="45dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llwheel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/llwheel2"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="7dp"
+                        android:text="@string/scripture_verse"
+                        android:textColor="@color/light_grey"
+                        android:textSize="18sp" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@+id/wheel_verse"
+                        android:layout_width="45dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left" >
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/btn_home" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp" >
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/orange"
+                android:padding="3dp"
+                android:text="@string/scripture_help_button"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" >
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_next" />
+    </RelativeLayout>
+
+</RelativeLayout>

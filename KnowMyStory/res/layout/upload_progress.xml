@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="30dp" >
+
+        <ProgressBar
+            android:id="@+id/pbUpload"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:secondaryProgress="0" />
+
+        <TextView
+            android:id="@+id/tvUploading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pbUpload"
+            android:layout_alignParentLeft="true"
+            android:padding="7dp"
+            android:text="Uploading...."
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvUploading"
+            android:layout_alignParentLeft="true"
+            android:padding="0dp"
+            android:textColor="@color/orange"
+            android:textSize="45sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
