@@ -1,4 +1,5 @@
 
+###MyStory Android Version 1.5
 Contents:
 This folder contains the KnowMystory Source Code and all required libraries.
 
